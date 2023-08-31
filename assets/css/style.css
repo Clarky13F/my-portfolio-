@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  /* background-color: rgb(10, 12, 11); */
+  position: relative;
+  margin: 0;
+}
+
+section {
+    color: #13293D;
+    /* height: 200px; */
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+
+}
+
+
+.section-div {
+  flex: 0 0 70%;
+  padding: 0 10px 10px 10px;
+  background-color: #E8F1F2;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.about-me-p {
+  line-height: 2;
+}
+
+.section-heading {
+  border-right: 5px solid #006494;
+  background-color: #E8F1F2;
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+div .container {
+  display: flex;
+  margin: 10px 0 0 0;
+  color: #E8F1F2;
+  background-color: #13293D;
+  border: 4px solid #247BA0;
+  flex: 0 0 70%;
+  height: 200px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+div .container:hover {
+  opacity: 70%;
+}
+
+div .container-whole {
+  width: 100%;
+  background-image: url(../images/Screenshot\ 2023-08-30\ 003724.png);
+  
+}
+
+div .container-half {
+  width: 48%;
+  float: left;
+  background-image: url(../images/Screenshot\ 2023-08-30\ 231655.png);
+}
+
+div .container-half-left {
+  margin: 10px 0 0 4%;
+  background-image: url(../images/Screenshot\ 2023-06-04\ 170420.png);
+}
+
+header {
+  background-color: #7c838a;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-bottom: solid 5px #ADB5BD;
+    
+  }
+
+.picture {
+  width: 125px;
+  height: 250px;
+}
+
+
+
+
+/* nav>ul {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  align-items: right;
+  justify-content: space-between;
+} */
+
+
+.header-ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-ul {
+  background-color: #E8F1F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+li {
+  /* display: inline-block ; */
+  list-style-type: none;
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+li:hover {
+  opacity: 50%;
+}
+
+/* #firstBox {
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/28/14/07/calculator-168360_640.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+} */
+
+@media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+      
+    
+    .section-heading {
+      text-align: left;
+      border-right: 0px none black;
+    }
+
+
+    section {
+      flex-direction: column;
+    }
+  
+    /* aside {
+      width: 100%;
+      text-align: center;
+    } */
+}
